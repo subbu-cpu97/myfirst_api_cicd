@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+.vscode/
+appsettings.Development.json
+*.user
+*.suo
+*.log
+*.tmp
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+.crash.log

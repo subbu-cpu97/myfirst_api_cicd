@@ -1,0 +1,27 @@
+@MyWebApp.API_HostAddress = http://localhost:5029
+
+GET {{MyWebApp.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{MyWebApp.API_HostAddress}}/api/user/create
+Accept: application/json
+content-type: application/json
+
+{
+    "username": "testuser",
+    "password": "Test@1234"
+}
+###
+
+POST {{MyWebApp.API_HostAddress}}/api/user/validate
+Accept: application/json
+content-type: application/json  
+
+{
+    "username": "testuser",
+    "password": "Test@1234"
+}   
+
+###
